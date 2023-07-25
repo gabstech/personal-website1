@@ -1,10 +1,3 @@
-/*
-#49b675
-#4B48E0
-#31E077
-#E0271B
-#E0C026
-*/
 
 *,
 *::before,
@@ -13,6 +6,12 @@
 }
 
 :root{
+
+    --background-color: #F2F5F4; /* Anti-Flash White */
+    --text-color: #A8A9AD; /* Metallic Silver */
+    --header-footer-color: #1D2951; /* Space Cadet */
+    --accent-color: #FCE883; /* Yellow (Crayola) */
+    --interactive-color: #367588; /* Teal Blue */
     
     --clr-bg: #fff;
     --clr-dark: #303030;

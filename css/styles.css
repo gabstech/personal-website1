@@ -7,15 +7,11 @@
 
 :root{
 
-    --background-color: #F2F5F4; /* Anti-Flash White */
+    --clear-color: #F2F5F4; /* Anti-Flash White */
     --text-color: #A8A9AD; /* Metallic Silver */
-    --header-footer-color: #1D2951; /* Space Cadet */
+    --dark-color: #1D2951; /* Space Cadet */
     --accent-color: #FCE883; /* Yellow (Crayola) */
     --interactive-color: #367588; /* Teal Blue */
-    
-    --clr-bg: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -45,15 +41,15 @@ header{
 
 .nav{
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--dark-color);
+    color: var(--text-color);
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 100;
 
-    transform: translateX(50%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5 0 .5 1);
 }
 
@@ -76,7 +72,7 @@ header{
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--accent-color);
 }
 
 .nav-toggle{
@@ -98,7 +94,7 @@ header{
 .hamburger,
 .hamburger::before,
 .hamburger::after{
-    background: var(--clr-accent);
+    background: var(--accent-color);
     width: 2em;
     height: 3px;
     border-radius: 1em;

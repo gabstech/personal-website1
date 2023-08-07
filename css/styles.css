@@ -46,8 +46,7 @@ header{
 
 .logo{
     max-width: 100px;
-
-    margin-left: 1em;
+    margin-left: 0.75em;
 }
 
 .nav{
@@ -91,7 +90,7 @@ header{
     background: transparent;
     border: 0;
     cursor: pointer;
-    margin-right: 1em;
+    margin-right: .75em;
 }
 
 .hamburger{

@@ -22,11 +22,17 @@
 @media (min-width: 880px){
     :root{
         --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
+        --fs-h2: 3.5rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
 }
+
+
+body{
+    margin: 0;
+}
+
 
 /* HEADER */
 header{
@@ -125,3 +131,36 @@ img#logo{
 
 .hamburger::before{top: 6px;}
 .hamburger::after{bottom: 6px;}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* O ajusta según lo necesites */
+    padding: 2em; /* Para un poco de espacio alrededor */
+    background: linear-gradient(to right, 
+                                var(--interactive-color) 0%, 
+                                var(--interactive-color) 33.33%, 
+                                var(--clear-color) 33.33%, 
+                                var(--clear-color) 100%);
+}
+
+.section__intro_text {
+    width: 50%; /* 2/3 del ancho */
+}
+
+.section__title, .section__subtitle {
+    color: var(--text-color); /* Metallic Silver para el texto */
+}
+
+.section__title--intro {
+    /*Seccion para el titulo de gabino hernandez*/
+    font-size: var(--fs-h1); 
+    color: var(--accent-color); 
+}
+
+.section_subtitle--intro {
+    font-size: var(--fs-h3);
+}
+

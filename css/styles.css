@@ -30,7 +30,7 @@
     }
 }
 
-/*GENERAL STYLES*/
+/*--------------------------------GENERAL STYLES-------------------------------*/
 
 body{
     background: var(--clear-color);
@@ -59,12 +59,22 @@ h1{font-size: var(--fs-h1);}
 h2{font-size: var(--fs-h2);}
 h3{font-size: var(--fs-h3);}
 
-nav{ display:none;}
+.section__title{
+    margin-bottom: .25em;
+    color: var(--accent-color);
+}
+
+.section__title--intro{
+    font-weight:;
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
 
 
-
-
-/* HEADER */
+/*------------------------- HEADER------------------------------------- */
 header{
 
     position: fixed;
@@ -167,31 +177,49 @@ img#logo{
 
 /*-------------------INTRODUCTION SECTION------------------*/
 
-.intro {
+.intro{
+    background: var(--interactive-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section__subtitle--intro{
+    margin-bottom: 1em;
+}
+
+@media (min-width: 880px){
+    .intro {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction:row-reverse;
-    height: 100vh; /* O ajusta según lo necesites */
-    padding: 2em; /* Para un poco de espacio alrededor */
+    height: 100vh; 
+    padding: 2em; 
     background: linear-gradient(to right, 
                                 var(--interactive-color) 0%, 
                                 var(--interactive-color) 33.33%, 
                                 var(--clear-color) 33.33%, 
                                 var(--clear-color) 100%);
-}
+    }
+    .section__intro_text {
+        width: 50%; 
+        text-align: center;
+    }
 
-.section__intro_text {
-    width: 50%; 
-    text-align: center;
 }
+/*
+
+
 
 .section__title, .section__subtitle {
     color: var(--text-color); 
 }
 
 .section__title--intro {
-    /*Seccion para el titulo de gabino hernandez*/
+    
     font-size: var(--fs-h1); 
     color: var(--accent-color); 
 }
@@ -199,7 +227,8 @@ img#logo{
 .section_subtitle--intro {
     font-size: var(--fs-h3);
 }
-
+section
+ */
 
 
 

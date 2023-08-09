@@ -17,25 +17,71 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --header-height:80px;
 }
 
 @media (min-width: 880px){
     :root{
         --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
+        --fs-h2: 3.5rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
 }
 
-/* HEADER */
+/*--------------------------------GENERAL STYLES-------------------------------*/
+
+body{
+    background: var(--clear-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family:;     /*por agregar*/
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section{padding: 5em 2em;}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3{
+    line-height: 1;
+    margin: 0;
+}
+
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+.section__title{
+    margin-bottom: .25em;
+    color: var(--accent-color);
+}
+
+.section__title--intro{
+    font-weight:;
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+
+/*------------------------- HEADER------------------------------------- */
 header{
 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,3 +171,82 @@ img#logo{
 
 .hamburger::before{top: 6px;}
 .hamburger::after{bottom: 6px;}
+
+
+
+
+/*-------------------INTRODUCTION SECTION------------------*/
+
+.intro{
+    background: var(--interactive-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section__subtitle--intro{
+    margin-bottom: 1em;
+}
+
+@media (min-width: 880px){
+    .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+    height: 100vh; 
+    padding: 2em; 
+    background: linear-gradient(to right, 
+                                var(--interactive-color) 0%, 
+                                var(--interactive-color) 33.33%, 
+                                var(--clear-color) 33.33%, 
+                                var(--clear-color) 100%);
+    }
+    .section__intro_text {
+        width: 50%; 
+        text-align: center;
+    }
+
+}
+
+
+/*-----------SECCION SERVICIOS------------- */
+
+.my-services{
+    background: var(--dark-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.section__title--services{
+    color: var(--accent-color);
+    position: relative;
+}
+
+.section__title--services::after{
+    content:'';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: .5em auto 1em;
+    background: var(--clear-color);
+    opacity: 0.4;
+}
+
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 880px){
+    .services{
+        display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+    }
+    .service + .service{
+        margin-left: 5em;
+    }
+}

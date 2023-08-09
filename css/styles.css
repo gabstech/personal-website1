@@ -30,9 +30,22 @@
     }
 }
 
+/*GENERAL STYLES*/
 
 body{
     margin: 0;
+}
+
+h1{
+    font-size: var(--fs-h1);
+}
+
+h2{
+    font-size: var(--fs-h2);
+}
+
+h3{
+    font-size: var(--fs-h3);
 }
 
 
@@ -167,3 +180,26 @@ img#logo{
     font-size: var(--fs-h3);
 }
 
+
+/*Servicios */
+
+.my-services{
+    background: var(--dark-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.section__title--services{
+    color: var(--accent-color);
+    position: relative;
+}
+
+.section__title--services::after{
+    content:'';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: .5em auto 1em;
+    background: var(--clear-color);
+    opacity: 0.4;
+}

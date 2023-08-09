@@ -163,10 +163,15 @@ img#logo{
 .hamburger::after{bottom: 6px;}
 
 
+
+
+/*-------------------INTRODUCTION SECTION------------------*/
+
 .intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction:row-reverse;
     height: 100vh; /* O ajusta según lo necesites */
     padding: 2em; /* Para un poco de espacio alrededor */
     background: linear-gradient(to right, 
@@ -196,7 +201,9 @@ img#logo{
 }
 
 
-/*Servicios */
+
+
+/*-----------SECCION SERVICIOS------------- */
 
 .my-services{
     background: var(--dark-color);

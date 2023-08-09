@@ -219,4 +219,18 @@ img#logo{
     opacity: 0.4;
 }
 
-@media 
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 880px){
+    .services{
+        display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+    }
+    .service + .service{
+        margin-left: 5em;
+    }
+}

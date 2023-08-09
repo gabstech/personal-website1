@@ -250,3 +250,47 @@ img#logo{
         margin-left: 5em;
     }
 }
+
+
+/*--------------------------ACERCA DE MI-----------------------------------------*/
+
+.about_me{
+    color: var(--interactive-color);
+    text-align: center;
+  
+}
+
+.section__title--about{
+    position: relative;
+    color: var(--accent-color);
+}
+
+.section__title--about::after{
+    content:'';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: .5em auto 1em;
+    background: var(--dark-color);
+    opacity: 0.4;
+}
+
+img#about-img{
+    max-width: 400px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 70vw;
+}
+
+@media (min-width:880px){
+    .about_me{
+        display:flex;
+	align-items:center;
+        gap: 2em;	
+    }
+    img#about-img{
+	width: 20vw;
+	border-radius: 40%
+    }
+}

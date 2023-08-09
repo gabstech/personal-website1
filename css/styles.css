@@ -200,8 +200,8 @@ img#logo{
     padding: 2em; 
     background: linear-gradient(to right, 
                                 var(--interactive-color) 0%, 
-                                var(--interactive-color) 33.33%, 
-                                var(--clear-color) 33.33%, 
+                                var(--interactive-color) 0%, 
+                                var(--clear-color) 50%, 
                                 var(--clear-color) 100%);
     }
     .section__intro_text {

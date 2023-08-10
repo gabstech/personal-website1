@@ -336,7 +336,7 @@ img#about-img{
 @media(min-width: 880px){
 
     .image-tracker{
-        width: 100vw;
+        width: 140vw;
         background-color: black;
         margin: 0rem;
     }

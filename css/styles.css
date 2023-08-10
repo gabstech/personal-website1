@@ -305,6 +305,7 @@ img#about-img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow:hidden;
 }
 
 .section__title--work{
@@ -335,11 +336,9 @@ img#about-img{
 @media(min-width: 880px){
 
     .image-tracker{
-        height: 100vh;
         width: 100vw;
         background-color: black;
         margin: 0rem;
-        overflow: hidden;
     }
     #image-container {
         display: flex;

@@ -150,11 +150,23 @@ img#logo{
 }
 
 
+/*---------estilos de presion de boton--*/
 .nav-open .nav{
-/*---------estilos de presion de boton------------*/
     transform: translateX(0%); 
 }
+.nav-open .hamburger{
+    transform: rotate(0.625turn);
+}
 
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+.nav-open .hamburger::after{
+    opacity:0;
+}
+
+
+/*estilos normales de toggle button*/
 .hamburger{
     display: block;
     position: relative;

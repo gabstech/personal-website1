@@ -300,7 +300,7 @@ img#about-img{
 
 
 .my-work{
-    background-color: black;
+    background-color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,7 +337,7 @@ img#about-img{
 
     .image-tracker{
         width: 140vw;
-        background-color: black;
+        background-color: (--text-color);
         margin: 0rem;
     }
     #image-container {

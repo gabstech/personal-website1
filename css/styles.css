@@ -102,6 +102,8 @@ img#logo{
     margin-top: .25em;
 }
 
+
+/*------------menu y boton-----------------------------*/
 .nav{
     position: fixed;
     background: var(--dark-color);
@@ -144,6 +146,7 @@ img#logo{
     border: 0;
     cursor: pointer;
     margin-right: .75em;
+    z-index: 200;
 }
 
 .hamburger{

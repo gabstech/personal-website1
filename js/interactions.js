@@ -1,4 +1,5 @@
-
+if(window.innerWidth >= 880)
+{
 const track = document.getElementById("image-container");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
@@ -41,3 +42,4 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+}

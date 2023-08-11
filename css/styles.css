@@ -6,6 +6,11 @@
 }
 
 :root{
+    --ff-primary: 'Bungee Inline', cursive;
+    --ff-secondary:'Sansita Swashed', cursive;
+
+    --fw-reg: 300;
+    --fw-bold: 700;
 
     --clear-color: #F2F5F4; /* Anti-Flash White */
     --text-color: #A8A9AD; /* Metallic Silver */
@@ -36,7 +41,7 @@ body{
     background: var(--clear-color);
     color: var(--text-color);
     margin: 0;
-    font-family:;     /*por agregar*/
+    font-family:var(--ff-secondary);     /*por agregar*/
     font-size: var(--fs-body);
     line-height: 1.6;
 }

@@ -5,7 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio Web Gabino</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Sansita+Swashed:wght@300;400;700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/6d85c717dd.js" crossorigin="anonymous"></script>
     </head>
 
 
@@ -36,17 +42,17 @@
         <!--HOME SECTION-->
 
         <section class="intro" id="home">
-	    <div class="section__intro--text">
+        <div class="section__intro--text">
                 <h1 class="section__title section__title--intro">
                     Gabino H. G.
                 </h1>
                 <p class="section__subtitle section_subtitle--intro">
                     Renewable Energy engineer
                 </p>
-		<p class="section__subtitle section_subtitle--intro">
+        <p class="section__subtitle section_subtitle--intro">
                     Self thought developer
-		</p>
-	    </div>
+        </p>
+        </div>
             <img src="#" alt="Picture of Gabino">
         </section>
 
@@ -104,15 +110,57 @@
                     Through my professional endeavors, I am not only working towards achieving strategic energy solutions but also championing the broader movement towards sustainability. I am passionate about inspiring change, fostering innovation, and harnessing the power of technology for the greater good.
                 </p>
             </div>
-            <img src="" alt="Gabino proffessional picture">
+            <img id="about-img" src="Images/gabs_cartoon.png" alt="Gabino professional picture">
         </section>
 
                     <!---------------------------MY WORK------------------------------>
         <section class="my-work" id="work">
-            <h2 class="section__title">My projects</h2>
-            <p class="section__subtitle">
-                
-            </p>
+            <h2 class="section__title section__title--work">My projects</h2>
+        <div class="image-tracker" id="image-container" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="work-image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1496753480864-3e588e0269b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1613346945084-35cccc812dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80" draggable="false" />
+            <img class="work-image" src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+        
+        </div>
         </section>
+
+    <!-------------------------FOOTER----------------------------------->
+    <footer class="footer">
+        <a href="mailto:gabino.hern.17@gmail.com" class=footer__link>gabino.hern.17@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                    <a class="social-list__link" href="https://mx.linkedin.com/in/gabino-hern%C3%A1ndez-god%C3%ADnez-4641a323a">
+			    <i class="fa-brands fa-linkedin"></i>
+		    </a>
+	    </li>
+            <li class="social-list__item">
+		    <a class="social-list__link" href="https://twitter.com/GabinoHG18">
+			    <i class="fa-brands fa-twitter"></i>
+		    </a>
+	    </li>
+            <li class="social-list__item">
+		    <a class="social-list__link" href="https://pin.it/75Zpqyo">
+			    <i class="fa-brands fa-pinterest"></i>
+		    </a>
+	    </li>
+            <li class="social-list__item">
+		    <a class="social-list__link" href="https://www.reddit.com/user/Beneficial_Bus_7668">
+			    <i class="fa-brands fa-reddit"></i>
+		    </a>
+	    </li>
+            <li class="social-list__item">
+		    <a class="social-list__link" href="https://github.com/gabstech/">
+			    <i class="fa-brands fa-github"></i>
+		    </a>
+	    </li>
+        </ul>
+    </footer>
+
+    <script src="js/interactions.js"></script>
     </body>
 </html>

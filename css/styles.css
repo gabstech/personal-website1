@@ -210,10 +210,18 @@ img#logo{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: var(--header-height);
 }
 
 .section__subtitle--intro{
     margin-bottom: 1em;
+}
+
+img#img_intro{
+    width: 50vw;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10%;    
 }
 
 @media (min-width: 880px){
